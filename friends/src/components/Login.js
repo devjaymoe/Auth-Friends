@@ -24,7 +24,7 @@ const Login = props => {
             // browser storage - localStorage (this is probably the least secure choice)
             // cookies
             localStorage.setItem("token", JSON.stringify(res.data.payload));
-            props.history.push("/protected");
+            props.history.push("/friendslist");
           })
           .catch(err => console.log({ err }));
     };
